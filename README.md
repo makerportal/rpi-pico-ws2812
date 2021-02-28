@@ -4,7 +4,7 @@ Raspberry Pi Pico RGB LED (WS2812) Ring Light Control with MicroPython
 ### JUMP TO:
 <a href="#start">- Wiring Diagram</a><br>
 <a href="#state">- MicroPython State Machine</a><br>
-<a href="#google">- Google Home LED Emulator </a><br>
+<a href="#simple">- Simple LED Array Loop </a><br>
 
 The RPi Pico WS2812 library can be downloaded using git:
 
@@ -71,6 +71,7 @@ state_mach = rp2.StateMachine(0, ws2812, freq=8_000_000, sideset_base=Pin(PIN_NU
 # Activate the state machine
 state_mach.active(1)
 ```
+The snippet of code given above will be used for each algorithm used to test the 16-pixel WS2812 LED right light.
 
-<a id="google"></a>
-# - Google Home LED Emulator -
+<a id="simple"></a>
+# - Simple LED Array Loop -
