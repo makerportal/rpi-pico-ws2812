@@ -20,9 +20,9 @@ The pin wiring is also given in the table below:
 
 | Power Supply | Pico | Ring Light |
 | --- | --- | --- |
-| 5V | N/A | 5V |
+| + | N/A | 5V |
 | N/A | GPIO13 | DI | 
-| GND | GND | GND |
+| - | GND | GND |
 
 <a id="state"></a>
 # - MicroPython State Machine -
