@@ -78,4 +78,4 @@ The snippet of code given above will be used for each algorithm used to test the
 The following corresponds to the script entitled:
 - /tests/ws2812_simple.py
 
-[LED Array Loop Demo](https://static1.squarespace.com/static/59b037304c0dbfb092fbe894/t/603c26e6dea190701aaec332/1614555138029/16pix_single_demo.gif?format=1000w)
+![LED Array Loop Demo](https://static1.squarespace.com/static/59b037304c0dbfb092fbe894/t/603c26e6dea190701aaec332/1614555138029/16pix_single_demo.gif?format=1000w)
