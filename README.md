@@ -28,7 +28,7 @@ Most of the GPIO pins can be used to control the WS2812 LED array, thus, the spe
 
 <a id="state"></a>
 # - MicroPython State Machine -
-The 16-Pixel LED Ring Light will be controlled using the scheme outlined in the [Raspberry Pi Pico MicroPython getting started document][https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf], where a tutorial entitled “Using PIO to drive a set of NeoPixel Ring (WS2812 LEDs)” contains a script to create a state machine on the Pico. The state machine will be used to control the LEDs on the ring light using a single pin on the Pico. The full MicroPython example script can also be found at the Raspberry Pi Pico’s NeoPixel Ring repository on GitHub.
+The 16-Pixel LED Ring Light will be controlled using the scheme outlined in the [Raspberry Pi Pico MicroPython getting started document](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf), where a tutorial entitled “Using PIO to drive a set of NeoPixel Ring (WS2812 LEDs)” contains a script to create a state machine on the Pico. The state machine will be used to control the LEDs on the ring light using a single pin on the Pico. The full MicroPython example script can also be found at the Raspberry Pi Pico’s NeoPixel Ring repository on GitHub.
 
 <a id="google"></a>
 # - Google Home LED Emulator -
