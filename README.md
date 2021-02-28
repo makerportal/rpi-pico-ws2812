@@ -13,6 +13,8 @@ The RPi Pico WS2812 library can be downloaded using git:
 <a id="start"></a>
 # - Wiring Diagram -
 
+![Wiring Diagram](./images/)
+
 <a id="state"></a>
 # - MicroPython State Machine -
 
