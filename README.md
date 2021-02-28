@@ -71,7 +71,7 @@ state_mach = rp2.StateMachine(0, ws2812, freq=8_000_000, sideset_base=Pin(PIN_NU
 # Activate the state machine
 state_mach.active(1)
 ```
-The snippet of code given above will be used for each algorithm used to test the 16-pixel WS2812 LED right light.
+The snippet of code given above will be used for each algorithm used to test the 16-pixel WS2812 LED ring light.
 
 <a id="simple"></a>
 # - Simple LED Array Loop -
