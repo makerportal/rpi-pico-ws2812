@@ -1,2 +1,2 @@
-# Raspberry Pi Pico RGB LED Ring Light Control
-Raspberry Pi Pico WS2812 RGB LED Ring Light Control with MicroPython 
+# Raspberry Pi Pico WS2812B Ring Light Control
+Raspberry Pi Pico RGB LED (WS2812) Ring Light Control with MicroPython 
