@@ -28,7 +28,49 @@ Most of the GPIO pins can be used to control the WS2812 LED array, thus, the spe
 
 <a id="state"></a>
 # - MicroPython State Machine -
-The 16-Pixel RGB LED ring light array will be controlled using the scheme outlined in the [Raspberry Pi Pico MicroPython getting started document](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf), where a tutorial entitled “Using PIO to drive a set of NeoPixel Ring (WS2812 LEDs).” The tutorial contains a script that will be used to create a state machine on the RPi Pico. The state machine will be used to control the LEDs on the ring light using a single pin on the Pico. The full MicroPython example script can also be found at the Raspberry Pi Pico’s [NeoPixel Ring repository](https://github.com/raspberrypi/pico-micropython-examples/blob/master/pio/neopixel_ring/neopixel_ring.py).
+The 16-Pixel RGB LED ring light array will be controlled using the scheme outlined in the [Raspberry Pi Pico MicroPython getting started document](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf), where we can get started with the tutorial entitled “Using PIO to drive a set of NeoPixel Ring (WS2812 LEDs).” The tutorial contains a script that will be used to create a state machine on the RPi Pico. The state machine will be used to control the LEDs on the ring light using a single pin on the Pico (GPIO13 in the wiring above). The full MicroPython example script can also be found at the Raspberry Pi Pico’s [NeoPixel Ring repository](https://github.com/raspberrypi/pico-micropython-examples/blob/master/pio/neopixel_ring/neopixel_ring.py).
+
+The code to start the state machine on the Pico's GPIO pin #13 is given below:
+
+```python
+import array, time
+from machine import Pin
+import rp2
+#
+############################################
+# RP2040 PIO and Pin Configurations
+############################################
+#
+# WS2812 LED Ring Configuration
+led_count = 16 # number of LEDs in ring light
+PIN_NUM = 13 # pin connected to ring light
+brightness = 0.5 # 0.1 = darker, 1.0 = brightest
+
+@rp2.asm_pio(sideset_init=rp2.PIO.OUT_LOW, out_shiftdir=rp2.PIO.SHIFT_LEFT,
+             autopull=True, pull_thresh=24) # PIO configuration
+
+# define WS2812 parameters
+def ws2812():
+    T1 = 2
+    T2 = 5
+    T3 = 3
+    wrap_target()
+    label("bitloop")
+    out(x, 1)               .side(0)    [T3 - 1]
+    jmp(not_x, "do_zero")   .side(1)    [T1 - 1]
+    jmp("bitloop")          .side(1)    [T2 - 1]
+    label("do_zero")
+    nop()                   .side(0)    [T2 - 1]
+    wrap()
+
+
+# Create the StateMachine with the ws2812 program, outputting on pre-defined pin
+# at the 8MHz frequency
+state_mach = rp2.StateMachine(0, ws2812, freq=8_000_000, sideset_base=Pin(PIN_NUM))
+
+# Activate the state machine
+state_mach.active(1)
+```
 
 <a id="google"></a>
 # - Google Home LED Emulator -
