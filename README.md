@@ -1,6 +1,9 @@
 # Raspberry Pi Pico WS2812B Ring Light Control
 Raspberry Pi Pico RGB LED (WS2812) Ring Light Control with MicroPython 
 
+Get your 16-Pixel RGB LED Ring Light at: https://makersportal.com/shop/16-pixel-rgb-led-ring-light
+Follow Along with the full tutorial at: xhttps://makersportal.com/blog/ws2812-ring-light-with-raspberry-pi-pico
+
 ### JUMP TO:
 <a href="#start">- Wiring Diagram</a><br>
 <a href="#state">- MicroPython State Machine</a><br>
