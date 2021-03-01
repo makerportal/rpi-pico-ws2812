@@ -5,6 +5,7 @@ Raspberry Pi Pico RGB LED (WS2812) Ring Light Control with MicroPython
 <a href="#start">- Wiring Diagram</a><br>
 <a href="#state">- MicroPython State Machine</a><br>
 <a href="#examples">- WS2812 Algorithm Examples </a><br>
+<a href='#google'>- WS2812 Google Home and Amazon Alexa LED Emulator </a><br>
 
 The RPi Pico WS2812 library can be downloaded using git:
 
@@ -84,3 +85,10 @@ Example output for:
 - /tests/ws2812_breathing.py
 
 ![LED Array Loop Demo](https://static1.squarespace.com/static/59b037304c0dbfb092fbe894/t/603c37cbc029a67fb146e643/1614559197440/16pix_breathing_demo.gif?format=1000w)
+
+<a id="google"></a>
+# - WS2812 Google Home and Amazon Alexa LED Emulator -
+In the final example script, routines for emulating Google Home's quad-color rotating routine is given, along with the rotating LED and zipped off routine used by Amazon Alexa devices.
+ 
+Example output for:
+- /tests/google_amazon_emulator.py
