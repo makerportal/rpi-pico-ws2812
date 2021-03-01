@@ -4,7 +4,7 @@ Raspberry Pi Pico RGB LED (WS2812) Ring Light Control with MicroPython
 ### JUMP TO:
 <a href="#start">- Wiring Diagram</a><br>
 <a href="#state">- MicroPython State Machine</a><br>
-<a href="#simple">- Simple LED Array Loop </a><br>
+<a href="#examples">- WS2812 Algorithm Examples </a><br>
 
 The RPi Pico WS2812 library can be downloaded using git:
 
@@ -73,7 +73,7 @@ state_mach.active(1)
 ```
 The snippet of code given above will be used for each algorithm used to test the 16-pixel WS2812 LED ring light.
 
-<a id="simple"></a>
+<a id="examples"></a>
 # - WS2812 Algorithm Examples -
 Example output for:
 - /tests/ws2812_simple.py
