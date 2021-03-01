@@ -82,7 +82,7 @@ Example output for:
 ![LED Array Loop Demo](https://static1.squarespace.com/static/59b037304c0dbfb092fbe894/t/603c26e6dea190701aaec332/1614555138029/16pix_single_demo.gif?format=1000w)
 
 Example output for:
-- /tests/ws2812_breathing.py
+- [/tests/ws2812_breathing.py](/tests/ws2812_breathing.py)
 
 ![LED Array Loop Demo](https://static1.squarespace.com/static/59b037304c0dbfb092fbe894/t/603c37cbc029a67fb146e643/1614559197440/16pix_breathing_demo.gif?format=1000w)
 
@@ -91,7 +91,7 @@ Example output for:
 In the final example script, routines for emulating Google Home's quad-color rotating routine is given, along with the rotating LED and zipped off routine used by Amazon Alexa devices.
  
 Example output for:
-- /tests/google_amazon_emulator.py
+- [/tests/google_amazon_emulator.py](/tests/google_amazon_emulator.py)
 
 ![Google Home Display](https://images.squarespace-cdn.com/content/v1/59b037304c0dbfb092fbe894/1614564384711-DAJBEKA9TURWMO0S0MHM/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/16pix_dome_google_lights_2.JPG?format=2500w)
 
