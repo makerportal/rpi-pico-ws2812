@@ -74,8 +74,13 @@ state_mach.active(1)
 The snippet of code given above will be used for each algorithm used to test the 16-pixel WS2812 LED ring light.
 
 <a id="simple"></a>
-# - Simple LED Array Loop -
-The following corresponds to the script entitled:
+# - WS2812 Algorithm Examples -
+Example output for:
 - /tests/ws2812_simple.py
 
 ![LED Array Loop Demo](https://static1.squarespace.com/static/59b037304c0dbfb092fbe894/t/603c26e6dea190701aaec332/1614555138029/16pix_single_demo.gif?format=1000w)
+
+Example output for:
+- /tests/ws2812_breathing.py
+
+![LED Array Loop Demo](https://static1.squarespace.com/static/59b037304c0dbfb092fbe894/t/603c37cbc029a67fb146e643/1614559197440/16pix_breathing_demo.gif?format=1000w)
