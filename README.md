@@ -92,3 +92,5 @@ In the final example script, routines for emulating Google Home's quad-color rot
  
 Example output for:
 - /tests/google_amazon_emulator.py
+
+Find video demonstration at: https://www.youtube.com/watch?v=teSNSrO1jcE
