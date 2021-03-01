@@ -98,4 +98,6 @@ Example output for:
 
 ![Google Home Display](https://images.squarespace-cdn.com/content/v1/59b037304c0dbfb092fbe894/1614564384711-DAJBEKA9TURWMO0S0MHM/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/16pix_dome_google_lights_2.JPG?format=2500w)
 
+-
 Find video demonstration at: https://youtu.be/teSNSrO1jcE
+-
