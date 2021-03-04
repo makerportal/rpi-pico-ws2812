@@ -19,9 +19,9 @@ import rp2
 ############################################
 #
 # WS2812 LED Ring Configuration
-led_count = 45 # number of LEDs in ring light
+led_count = 16 # number of LEDs in ring light
 PIN_NUM = 13 # pin connected to ring light
-brightness = 0.2 # 0.1 = darker, 1.0 = brightest
+brightness = 1.0 # 0.1 = darker, 1.0 = brightest
 
 @rp2.asm_pio(sideset_init=rp2.PIO.OUT_LOW, out_shiftdir=rp2.PIO.SHIFT_LEFT,
              autopull=True, pull_thresh=24) # PIO configuration
@@ -78,7 +78,7 @@ def hex_to_rgb(hex_val):
 #
 # Create Google Home four color rotation scheme
 google_colors = ['#4285f4','#ea4335','#fbbc05','#34a853'] # hex colors by Google
-cycles = 1 # number of times to cycle 360-degrees
+cycles = 5 # number of times to cycle 360-degrees
 for jj in range(int(cycles*len(pixel_array))):
     for ii in range(len(pixel_array)):
         if ii%int(math.ceil(len(pixel_array)/4))==0: # 90-degree leds only
